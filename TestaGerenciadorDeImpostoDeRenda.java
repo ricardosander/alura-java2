@@ -10,7 +10,12 @@ public class TestaGerenciadorDeImpostoDeRenda {
 		gerenciador.adiciona(sv);
 
 		ContaCorrente cc = new ContaCorrente();
-		cc.deposita(1000);
+		try {
+			cc.deposita(1000);
+		} catch (ValorInvalidoException e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
 		gerenciador.adiciona(cc);
 
 		System.out.println(gerenciador.getTotal());

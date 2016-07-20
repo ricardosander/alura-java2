@@ -8,7 +8,7 @@ public abstract class Conta {
 		return this.saldo;
 	}
 
-	public void deposita(double deposito) {
+	public void deposita(double deposito) throws ValorInvalidoException {
 		
 		if (deposito <= 0) {
 			throw new ValorInvalidoException(deposito);

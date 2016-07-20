@@ -7,9 +7,14 @@ public class TestaContas {
         ContaCorrente cc = new ContaCorrente();
         ContaPoupanca cp = new ContaPoupanca();
 
-        cc.deposita(1000); 
-        cp.deposita(1000);
+        try {
+			cc.deposita(1000);
+			cp.deposita(1000);
 
+		} catch (ValorInvalidoException e) {
+			System.out.println(e.getMessage());
+		} 
+        
         cc.atualiza(0.01);
         cp.atualiza(0.01);
 

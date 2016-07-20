@@ -8,7 +8,7 @@ public class ContaPoupanca extends Conta {
 	}
 
 	@Override
-	public void deposita(double deposito) {
+	public void deposita(double deposito) throws ValorInvalidoException {
 		super.deposita(deposito - 0.1);
 	}
 }
