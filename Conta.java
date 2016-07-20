@@ -1,6 +1,6 @@
 package java2;
 
-public class Conta {
+public abstract class Conta {
 	
 	protected double saldo;
 
@@ -22,7 +22,5 @@ public class Conta {
 		this.saldo -= saque;
 	}
 
-	public void atualiza(double taxa) {
-		this.saldo += this.saldo * taxa;
-	}
+	public abstract void atualiza(double taxa);
 }
