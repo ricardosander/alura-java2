@@ -9,6 +9,6 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public void deposita(double deposito) {
-		this.saldo += deposito - 0.1;
+		super.deposita(deposito - 0.1);
 	}
 }

@@ -9,6 +9,10 @@ public abstract class Conta {
 	}
 
 	public void deposita(double deposito) {
+		
+		if (deposito <= 0) {
+			throw new IllegalArgumentException("O valor de depósito informado não é válido.");
+		}
 		this.saldo += deposito;
 	}
 
