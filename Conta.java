@@ -11,7 +11,7 @@ public abstract class Conta {
 	public void deposita(double deposito) {
 		
 		if (deposito <= 0) {
-			throw new ValorInvalidoException("O valor de depósito informado não é válido.");
+			throw new ValorInvalidoException(deposito);
 		}
 		this.saldo += deposito;
 	}
