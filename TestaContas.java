@@ -1,4 +1,6 @@
-class TestaContas {
+package java2;
+
+public class TestaContas {
 
     public static void main(String[] args) {
 

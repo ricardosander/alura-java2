@@ -1,4 +1,6 @@
-class AtualizadorDeContas {
+package java2;
+
+public class AtualizadorDeContas {
 
 	private double saldoTotal;
 	private double selic;

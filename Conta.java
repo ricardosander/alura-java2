@@ -1,4 +1,6 @@
-class Conta {
+package java2;
+
+public class Conta {
 	
 	protected double saldo;
 
