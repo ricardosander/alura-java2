@@ -19,4 +19,8 @@ class Conta {
 		}
 		this.saldo -= saque;
 	}
+
+	public void atualiza(double taxa) {
+		this.saldo += this.saldo * taxa;
+	}
 }
