@@ -14,5 +14,7 @@ public class TestaGerenciadorDeImpostoDeRenda {
 		gerenciador.adiciona(cc);
 
 		System.out.println(gerenciador.getTotal());
+		System.out.printf("O saldo é: %.2f", cc.getSaldo());
+
 	}
 }
